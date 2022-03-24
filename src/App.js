@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-
+const name= <span>nilam</span>
+const newElement=React.createElement('h2',{className:'newElement'},'hlw world')
+const test = ()=>{
+  alert('hi')
+}
+const age=function(a){
+  if (a>8){
+    return <span>"You are eligable"</span>
+  }
+  else
+  {
+    return <span>"You are not eligable"</span>
+  }
+}
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+<h1>hi {name}</h1>
+{newElement}
+<button onClick={test}></button>
+{age(19)}
     </div>
   );
 }
