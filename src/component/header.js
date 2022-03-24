@@ -1,5 +1,9 @@
 import React from 'react';
-const Header =()=>{
-    return <h1>hi</h1>
+const Header =(props)=>{
+    console.log(props);
+    return (
+    <div><h1>hi {props.name}</h1>
+    {props.children}</div>
+    )
 }
 export default Header;
