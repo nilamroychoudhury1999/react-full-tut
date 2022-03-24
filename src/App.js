@@ -5,6 +5,8 @@ import { render } from '@testing-library/react';
 import Header from './component/header';
 import CHeader from './component/cHeader';
 import Channel from './component/Channel';
+import FunctionClick from './component/FunctionClick';
+
 class App extends React.Component
 {render()
 
@@ -15,6 +17,8 @@ class App extends React.Component
 <Header name="anuj"/>
 <CHeader name="anuj"/>
 <Channel/>
+
+
 </div>)
   
  
